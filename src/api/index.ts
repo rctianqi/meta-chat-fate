@@ -30,7 +30,7 @@ export async function fetchChatAPIProcess<T = any>(
       `${base.baseUrl}/v1/chat/completions`, {
         method: 'POST',
         body: JSON.stringify({
-          max_tokens: 1000,
+          max_tokens: 2048,
           model: base.model,
           temperature: 0.8,
           top_p: 1,
